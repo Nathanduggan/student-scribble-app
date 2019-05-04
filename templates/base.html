@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" type="text/css" />
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Teacher's Notes</title>
+</head>
+<body>
+  
+        <nav>
+    <div class=" nav-wrapper">
+      <a href="#!" class="brand-logo center">Logo</a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="{{url_for('get_notes')}}">Home</a></li>
+        <li><a href="badges.html">Add Notes</a></li>
+        <li><a href="badges.html">Add Subject</a></li>
+        <li class="active"><a href="collapsible.html">Manage Notes</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Student Scribble</div>
+      <div class="list-group list-group-flush">
+        <a href="{{url_for('get_notes')}}" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="{{url_for('get_notes')}}" class="list-group-item list-group-item-action bg-light">Notes</a>
+        <a href="{{url_for('add_note')}}" class="list-group-item list-group-item-action bg-light">Add Notes</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Add Subject</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Contact</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">About</a>
+      </div>
+    </div>
+ 
+   <div class="container">
+  {% block content %} {% endblock %}
+
+    <!-- Page Content -->
+  
+
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
+     
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/grayscale.min.js') }}"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+  
+    $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+    $(document).ready(function(){
+    $('select').formSelect();
+  });
+  
+  
+    $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+  
+   $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+  
+  
+       
+    </script>
+
