@@ -34,9 +34,9 @@ def insert_note():
 @app.route('/edit_task/<note_id>')
 def edit_task(note_id):
     the_note =  mongo.db.notes.find_one({"_id": ObjectId(note_id)})
-    all_notes =  mongo.db.notes.find()
+    all_subjects =  mongo.db.subjects.find()
     return render_template('editnote.html', note=the_note,
-                           notes=all_notes)
+                        subjects=all_subjects)
                            
                           
 @app.route('/update_note/<note_id>', methods=["POST"])

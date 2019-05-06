@@ -3,88 +3,50 @@
 <h2>Edit Notes</h2>
 
       
-  <form action="{{ url_for('update_note', note_id=note._id) }}" method="POST"  class="col s12">
+    <form action="{{ url_for('update_note', note_id=note._id)}}" method="POST" class="col s12">
         <div class="row">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">poll</i>
                     <select id="subject" name="subject_name">
-                        
                   <option value="" disabled selected>Choose Subject</option>
-                    {% for sub in subjects %}
-                    {% if sub.subject_name == note.subject_name %}
-                      <option value="{{sub.subject_name}}" selected>{{sub.subject_name}}</option>
-                      {% else %}
+                  {% for sub in subjects %}
                       <option value="{{sub.subject_name}}">{{sub.subject_name}}</option>
-                      {% endif %}
                   {% endfor %}
                 </select>
-                    <label>Subject</label>
+                    <label>Task Category</label>
                 </div>
             </div>
-          
-        </div>
         
         <div class="input-field col s12">
     
       <option value="" disabled selected>Choose Topic</option>
-      <textarea name="task.task_name" id="task.task_name" class="materialize-textarea">{{task.task_name}}</textarea>
+      <textarea name="note.task_name" id="note.task_name" class="materialize-textarea">{{note.task_name}}</textarea>
     
     
   </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
-                <textarea name="subject_description" id="subject_description" class="materialize-textarea">{{task.subject_description}}</textarea>
+                <textarea name="subject_description" id="subject_description" class="materialize-textarea">{{note.subject_description}}</textarea>
                 <label for="icon_telephone">Notes</label>
             </div>
         </div>
           <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">today</i>
-                <input id="due_date" name="due_date" type="text" class="datepicker" value="{{ task.due_date }}"><label for="icon_prefix">Due Date</label>
+                <input id="due_date" name="due_date" type="text" class="datepicker" value="{{ note.due_date }}"><label for="icon_prefix">Due Date</label>
             </div>
         </div>
       
         <div class="row">
             <div class="switch">
-                <legend>Importance</legend>
-         <p>
-      <label>
-        {% if task.complete %}
-          <input id="complete" name="complete" type="radio" checked>
-          
-          {% else %}
-            <input id="complete" name="complete" type="radio">
-          {% endif %}
-          
-        <span>High</span>
-      </label>
-    </p>
-    <p>
-      <label>
-         {% if task.complete %}
-          <input id="complete" name="complete" type="radio" checked>
-          
-          {% else %}
-            <input id="complete" name="complete" type="radio">
-          {% endif %}
-        <span>Medium</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        {% if task.complete %}
-          <input id="complete" name="complete" type="radio" checked>
-          
-          {% else %}
-            <input id="complete" name="complete" type="radio">
-          {% endif %}
-        <span>Low</span>
-      </label>
-    </p>
-      </div>
-    </p>
+                <label>
+                  <input id="complete" name="complete" type="checkbox">
+                  <span class="lever"></span>
+                  Complete
+                </label>
+            </div>
         </div>
         <div class="row">
             <button class="btn waves-effect waves-light" type="submit" name="action">Edit Task
@@ -97,7 +59,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        due_date = Date.parse('{{task.due_date}}');
+        due_date = Date.parse('{{note.due_date}}');
         $('#due_date').pickadate('picker').set('select', due_date, { format: 'dd/mm/yyyy' }).trigger('change');
     });
 </script>
