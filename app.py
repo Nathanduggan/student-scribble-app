@@ -19,7 +19,7 @@ def get_notes():
 @app.route('/add_note')
 def add_note():
     return render_template('addnotes.html',
-    subjects=mongo.db.subjects.find())
+    notes=mongo.db.subjects.find())
     
      
 
