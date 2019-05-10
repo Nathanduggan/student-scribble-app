@@ -1,38 +1,56 @@
-/* The sidebar menu */
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+.collapsible {
+  display: inline-block;
+  background-color: #839192;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 550px;
+  height: 150px;
+  border: groove;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+strong {
+  font-size: 18px;
+  font-family: 'Indie Flower', cursive;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover 
-  color: #f1f1f1;
+.collapsible-body {
+  font-family: 'Indie Flower', cursive;
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #17A589;
 }
 
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+.header {
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Modak', cursive;
+  color: #1E8449;
+  
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.name {
+  font-family: 'Indie Flower', cursive;
+  color: #000;
+  padding-left: 30px;
+  
+  
+  
+}
+
+.jumbotron {
+  color: #1E8449;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+.brand-logo {
+  font-family: 'Modak', cursive;
+  color: #1E8449;
+}
+
+.add {
+  padding-top: 30px;
 }

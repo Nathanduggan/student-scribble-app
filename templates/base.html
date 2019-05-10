@@ -9,13 +9,19 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+   <style>
+body  {
+  background-color: #F7F9F9;
+}
+</style>
     <title>Student Scribble</title>
 </head>
 <body>
   
+
+  
         <nav>
-    <div class=" nav-wrapper">
+    <div class="container nav-wrapper">
       <a href="{{url_for('get_notes')}}" class="brand-logo center">Student Scribble</a>
       <ul class="left hide-on-med-and-down">
         <li><a href="{{url_for('get_notes')}}">Home</a></li>
@@ -29,18 +35,13 @@
       </ul>
     </div>
   </nav>
-          <!-- Side navigation -->
-          <div class="sidenav">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-          
-          <!-- Page content -->
-          <div class="main">
-            ...
-          </div>
+  
+  <div>
+    <img src="imges/pencil.png" height="120" width="600">
+  </div>
+  
+
+  
  
    <div class="container">
   {% block content %} {% endblock %}
@@ -49,13 +50,7 @@
   
 
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+
 
 </body>
 
@@ -97,6 +92,20 @@
     $('.dropdown-trigger').dropdown();
   
   
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
        
     </script>
 

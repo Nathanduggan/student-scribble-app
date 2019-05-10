@@ -2,7 +2,7 @@
 
 <div>
     
-    <h3>Subjects</h3>
+    <h3 class="header">Subjects</h3>
 
 </nav>
 
@@ -18,21 +18,27 @@
 
 
             </div>
-            <div class=" col 9">
+            <div class="name col 9">
                 <strong>{{subject.subject_name}}</strong> 
             </div>
+            
+            
 
     {% endfor %}
-
-</ul>
-
-</div>
-
-<div class="row">
+    
+    </ul>
+    
+    <div class="add row">
     <a href="{{url_for('new_subject')}}" class="waves-effect waves-light btn">
         <i class="material-icons right">playlist_add</i>Add Subject</a>
     
 </div>
+
+
+
+
+
+
 
 
 {% endblock %}
