@@ -90,6 +90,27 @@ def insert_subject():
 @app.route('/new_subject')
 def new_subject():
     return render_template('addsubject.html')
+    
+@app.route('/about')
+def about():
+    return render_template('about.html')
+    
+@app.route('/support')
+def support():
+    return render_template('support.html')
+
+
+@app.route('/about', methods=['GET', 'POST'])
+def pencil():
+    return render_template('about.html')
+    
+@app.route('/base', methods=['GET', 'POST'])
+def profile():
+    return render_template('base.html')
+    
+@app.route('/base', methods=['GET', 'POST'])
+def me():
+    return render_template('base.html')      
                            
      
 if __name__ == '__main__':

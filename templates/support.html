@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="support">Support</h1>
+
+<section id="contact" class="container-fluid color">
+			<h4 class="support"><small>If you would like to receive support, please fill out the form below
+			and one of our support team will be in touch as soon as possible.</small></h4>
+			<form onsubmit="return sendMail(this);" class="form-inline" id="details">
+				<h5 class="support">Fill in your details</h5>
+ 	<form onsubmit="return sendMail(this);" class="form-inline">
+				
+				<div class="form-group">
+				
+				 <input type="text" name="name" class="form-control" id="fullname" method="GET" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/><br><br>
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Questions?" required></textarea><br><br>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </form>
+                </div>
+		</section>
+
+
+        
+{% endblock %}
+
+<script>
+  src="js/sendEmail.js">
+  
+  (function() {
+        emailjs.init("user_IiScixNvjLrC3CiJwZ1Hf");
+        /*emailjs.send("gmail", "nathan",{name: "Nathan", notes: "check this out"});*/
+        
+    })();
+    
+    </script>
+       

@@ -1,12 +1,13 @@
 .collapsible {
-  display: inline-block;
+  display: center;
   background-color: #839192;
   color: white;
   cursor: pointer;
   padding: 5px;
-  width: 550px;
+  padding-left: 50px;
+  width: 950px;
   height: 150px;
-  border: groove;
+  border: none;
   text-align: center;
   outline: none;
   font-size: 15px;
@@ -20,6 +21,8 @@ strong {
 .collapsible-body {
   font-family: 'Indie Flower', cursive;
   padding: 0 10px;
+  width: 950px;
+  height: 150px;
   display: none;
   overflow: hidden;
   background-color: #17A589;
@@ -42,7 +45,7 @@ strong {
 }
 
 .jumbotron {
-  color: #1E8449;
+  
   font-family: 'Baloo Bhai', cursive;
 }
 
@@ -53,4 +56,16 @@ strong {
 
 .add {
   padding-top: 30px;
+}
+
+.jumbotron {
+  padding-top: 20px;
+}
+
+.center-block {
+  padding-bottom: 20px;
+}
+
+.support {
+  font-family: 'Modak', cursive;
 }

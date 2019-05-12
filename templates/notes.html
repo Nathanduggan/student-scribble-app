@@ -2,12 +2,18 @@
 {% block content %}
        
      
-   <div class="container jumbotron text-center">
+   <div class="container-fluid jumbotron text-center">
+    
+            <img src="{{url_for('static',filename='img/notpad-pencil.jpg')}}" width="100%" height="50%">
   <h1>My Notes</h1>
-  <p>Learn how to use Student Scribble Click <a href="">Here</a></p> 
-</div>
+  <p>Learn how to use Student Scribble Click <a href="{{url_for('about')}}">Here</a></p>
   
-    <ul class="collapsible">
+  
+  
+
+
+  
+    <ul class="container-fluid">
       {% for note in notes %}
     <li>
       <div class="collapsible">
