@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" media="screen">
+  </head>
+  <body>
+<style>
+  body, html {
+  height: 100%;
+  margin-top: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("static/img/login5.jpg");
+  text-align: center;
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg h1 {
+  color: white;
+}
+
+</style>
+
+    <div></div>
+    <div class="bg container">
+      <h1>Please login</h1>
+      <br>
+      <form action="" method="post">
+      <div class="container">
+    <label for="uname"><b></b></label>
+    <input type="text" placeholder="Enter Username" name="username" required><br>
+
+    <label for="psw"><b></b></label>
+    <input type="password" placeholder="Enter Password" name="password" required><br>
+        
+    <button type="submit">Login</button>
+      </form>
+      
+      <!----Don't forget to add Row to Form>
+      
+          
+    
+
+  
+      </form>
+      <p class="register">Don't have an account? Register <a href="#">here</a></p>
+     
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
