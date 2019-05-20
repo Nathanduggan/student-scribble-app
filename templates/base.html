@@ -11,7 +11,8 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
    <style>
 body  {
-  background-image: url({{ url_for('static', filename='img/background.tif') }})
+  background-image: url({{ url_for('static', filename='img/background.jpg') }})
+  
 }
 </style>
     <title>Student Scribble</title>
@@ -59,7 +60,7 @@ create
 
   
  
-   <div class="container">
+   <div class="bg2 container">
   {% block content %} {% endblock %}
 
     <!-- Page Content -->

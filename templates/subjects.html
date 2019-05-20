@@ -7,21 +7,21 @@
 
 </nav>
 
-<ul class=" collapsible">
+<ul class="collapsible">
     {% for subject in subjects %}
     <li>
-        <div class=" collapsible-header">
+        <div class="collapsible-header">
+           <li>
+            <div class="collapsible-header">
+                <a href="{{url_for('delete_subject', subject_id =subject._id)}}" class="waves-effect waves-light btn btn_small"><i class="material-icons right">delete</i>del</a>Del</a>
+                <a href="{{url_for('edit_subject', subject_id =subject._id)}}" class="waves-effect waves-light btn btn_small blue"><i class="material-icons right">delete</i>edit</a>Edit</a>
 
-            <div class="col s3">
-                <i class="material-icons">note</i>
-                <a href="{{url_for('delete_subject', subject_id =subject._id)}}" class="waves-effect waves-light btn-small"><i class="material-icons right">delete</i>del</a>
-                <a href="{{url_for('edit_subject', subject_id =subject._id)}}" class="waves-effect waves-light btn-small blue"><i class="material-icons right">edit</i>Edit</a>
-
-
+                <div class="name task_header">
+                    <strong>{{subject.subject_name}}</strong>
+                </div>
             </div>
-            <div class="name col 9">
-                <strong>{{subject.subject_name}}</strong> 
-            </div>
+        </li>
+            
             
             
 
@@ -29,16 +29,13 @@
     
     </ul>
     
-    <div class="add row">
+   
+
+<div class="row">
     <a href="{{url_for('new_subject')}}" class="waves-effect waves-light btn">
-        <i class="material-icons right">playlist_add</i>Add Subject</a>
-    
+        <i class="material-icons right">playlist_add</i>Add Subject
+    </a>
 </div>
-
-
-
-
-
 
 
 

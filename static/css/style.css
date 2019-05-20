@@ -1,16 +1,21 @@
 .collapsible {
   background-color: #5DADE2;
+  text-align: center;
   color: white;
   cursor: pointer;
   padding: 5px;
   padding-left: 50px;
-  width: 400px;
-  height: 150px;
+  width: 1080px;
+  height: 150;
   border: none;
-  text-align: center;
   outline: none;
   font-size: 18px;
+  margin-bottom: 20px;
 }
+
+
+
+
 
 
 strong {
@@ -21,7 +26,7 @@ strong {
 .collapsible-body {
   font-family: 'Indie Flower', cursive;
   padding: 0 10px;
-  width: 400px;
+  width: 1080px;
   height: 150px;
   display: none;
   overflow: hidden;
@@ -78,7 +83,6 @@ input[type=text], input[type=password] {
   width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -104,9 +108,6 @@ button:hover {
 }
 
 
-.container {
-  padding: 16px;
-}
 
 span.psw {
   float: right;
@@ -117,6 +118,5 @@ span.psw {
   color: white;
   font-size: 20px;
 }
-
 
 

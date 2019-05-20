@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Flask Intro - login page</title>
+    <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" media="screen">
   </head>
@@ -30,11 +30,11 @@
 
 </style>
 
-    <div></div>
+    
     <div class="bg container">
       <h1>Please login</h1>
       <br>
-      <form action="" method="post">
+     <form method=POST action="{{ url_for('login') }}">
       <div class="container">
     <label for="uname"><b></b></label>
     <input type="text" placeholder="Enter Username" name="username" required><br>
@@ -45,14 +45,14 @@
     <button type="submit">Login</button>
       </form>
       
-      <!----Don't forget to add Row to Form>
+    
       
           
     
 
   
       </form>
-      <p class="register">Don't have an account? Register <a href="#">here</a></p>
+      <p class="register">Don't have an account? Register <a href="{{url_for('new_user')}}">here</a></p>
      
       {% if error %}
         <p class="error"><strong>Error:</strong> {{ error }}

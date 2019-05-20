@@ -125,6 +125,19 @@ def login():
     return render_template('login.html', error=error)
     
     
+@app.route('/insert_user', methods=['POST'])
+def insert_user():
+    users =  mongo.db.users
+    users.insert_one(request.form.to_dict())
+    return redirect(url_for('login'))
+    
+    
+    
+    
+@app.route('/new_user', methods=['POST', 'GET'])
+def new_user():
+    return render_template('register.html')
+    
 @app.route('/get_login')
 def get_login():
     return render_template('login.html',
