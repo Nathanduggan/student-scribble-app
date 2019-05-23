@@ -27,9 +27,7 @@ body  {
 </ul>
 <nav>
   <div class="container nav-wrapper">
-    <a href="{{url_for('get_notes')}}" class="brand-logo"><i class="material-icons">
-create
-</i>Student Scribble</a>
+    <a href="{{url_for('get_notes')}}" class="brand-logo"><i class="material-icons right">create</i>Student Scribble</a>
     <ul class="right hide-on-med-and-down">
       <li><a href="{{url_for('get_notes')}}">Home</a></li>
       <li><a href="{{url_for('add_note')}}">Add Note</a></li>
@@ -48,12 +46,13 @@ create
       <a href="#name"><span class="white-text name">Nathan Duggan</span></a>
       <a href="#email"><span class="white-text email">Nathan.duggan0@gmail.com</span></a>
     </div></li>
-    <li><a href="{{url_for('about')}}"><i class="material-icons">info</i>About</a></li>
-    <li><a href="{{url_for('support')}}">Support</a></li>
-    <li><a href="{{url_for('login')}}">Login</a></li>
+    <li><a href="{{url_for('get_notes')}}"><i class="material-icons">home</i>Home</a></li>
+    <li><a href="{{url_for('add_note')}}"><i class="material-icons">note_add</i>Add Note</a></li>
+    <li><a href="{{url_for('get_subjects')}}"><i class="material-icons">subject</i>Manage Subjects</a></li>
     <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    <li><a href="{{url_for('about')}}"><i class="material-icons">info</i>About</a></li>
+    <li><a href="{{url_for('support')}}"><i class="material-icons">local_library</i>Support</a></li>
+    <li><a href="{{url_for('login')}}"><i class="material-icons">assignment_ind</i>Login</a></li>
   </ul>
   <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   

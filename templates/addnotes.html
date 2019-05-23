@@ -1,4 +1,6 @@
 {% extends 'base.html' %} {% block content %}
+
+<img src="{{url_for('static',filename='img/notes.png')}}" width="20%" height="30%">
 <h3 class="support">Add Task</h3>
         <form action="{{url_for('insert_note')}}" method="POST"  class="col s12">
         <div class="row">
@@ -17,7 +19,7 @@
         </div>
         
         <div class="row">
-    <form action="" method="POST" class="col s12">
+    <form action="" method="POST">
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>

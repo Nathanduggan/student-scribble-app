@@ -1,5 +1,7 @@
 {% extends 'base.html'%} {% block content %}
 
+<img src="{{url_for('static',filename='img/edit-note.png')}}" width="20%" height="30%">
+
 <h2>Edit Notes</h2>
 
       
@@ -18,13 +20,13 @@
                 </div>
             </div>
         
-        <div class="input-field col s12">
-    
-      <option value="" disabled selected>Choose Topic</option>
-      <textarea name="task_name" id="task_name" class="materialize-textarea">{{note.task_name}}</textarea>
-    
-    
-  </div>
+      
+   <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">grade</i>
+                <textarea  name="task_name" id="task_name" class="materialize-textarea">{{note.task_name}}</textarea>
+                
+            </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>

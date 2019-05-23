@@ -30,11 +30,15 @@
 
 </style>
 
-    
+
+   
     <div class="bg container">
+      
       <h1>Please login</h1>
       <br>
-     <form method=POST action="{{ url_for('login') }}">
+      <div class="row">
+        <div class="col s12">
+     <form action="{{ url_for('login') }}" method="POST">
       <div class="container">
     <label for="uname"><b></b></label>
     <input type="text" placeholder="Enter Username" name="username" required><br>
@@ -62,5 +66,9 @@
         <p class="error"><strong>Error:</strong> {{ error }}
       {% endif %}
     </div>
+    </div>
+    </div>
+    </div>
+
   </body>
 </html>
