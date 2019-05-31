@@ -124,7 +124,7 @@ def me():
 def select_user():
     if request.method == 'POST':
         users = mongo.db.users
-        select_user = users.find_one({"user_name" : request.form["username"]})
+        select_user = users.find_one({"username" : request.form["username"]})
         
         if select_user:
 
