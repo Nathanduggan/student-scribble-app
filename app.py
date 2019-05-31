@@ -1,6 +1,7 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, session, flash, request, url_for
 from flask_pymongo import PyMongo
+from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
 
 
@@ -10,6 +11,9 @@ app.config["MONGO_DBNAME"] = 'student-scribble-app'
 app.config["MONGO_URI"] = 'mongodb+srv://root:Ipod5009@myfirstcluster-2pohw.mongodb.net/student-scribble-app?retryWrites=true'
 
 mongo = PyMongo(app)
+bcrypt = Bcrypt(app)
+
+
 
 
 @app.route('/')
@@ -114,15 +118,30 @@ def me():
     return render_template('base.html')
     
 # Route for handling the login page logic
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    error = None
+@app.route('/select_user', methods=['GET', 'POST'])
+def select_user():
     if request.method == 'POST':
-        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
-            error = 'Invalid Credentials. Please try again.'
-        else:
-            return redirect(url_for('get_notes'))
-    return render_template('login.html', error=error)
+        users = mongo.db.users
+        select_user = users.find_one({"username" : request.form["username"]})
+        
+        if select_user:
+
+         # If user exist in database then check password
+         if bcrypt.check_password_hash(select_user["user_password"].encode('utf-8'), request.form["user_password"]):
+            session["username"] = request.form["username"]
+
+            # If login & password matches then redirect user to main page, otherwise pop out errors
+            if "username" in session:
+               return redirect(url_for("get_notes", username=session["username"]))
+        
+
+
+    flash("Invalid username/password combination") 
+   
+    return render_template("login.html")
+    
+    
+   
     
     
 @app.route('/insert_user', methods=['POST'])
@@ -151,3 +170,4 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
             debug=True)
+            
