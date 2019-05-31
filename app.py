@@ -6,11 +6,11 @@ from bson.objectid import ObjectId
 
 
 app = Flask(__name__)
-app.secretkey = 'subject_key'
+app.secret_key = b'_5y#2L"F4Q8Uz\n\xec]/'
 
 app.config["MONGO_DBNAME"] = 'student-scribble-app'
 app.config["MONGO_URI"] = 'mongodb+srv://root:Ipod5009@myfirstcluster-2pohw.mongodb.net/student-scribble-app?retryWrites=true'
-app.secret_key = os.getenv("MONGODB_SUBJECT_SECRET_KEY")
+
 
 mongo = PyMongo(app)
 bcrypt = Bcrypt(app)
