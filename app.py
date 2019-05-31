@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = 'student-scribble-app'
 app.config["MONGO_URI"] = 'mongodb+srv://root:Ipod5009@myfirstcluster-2pohw.mongodb.net/student-scribble-app?retryWrites=true'
+app.secret_key = os.getenv("MONGODB_STUDENTSCRIBBLE_SECRET_KEY")
 
 mongo = PyMongo(app)
 bcrypt = Bcrypt(app)
