@@ -129,7 +129,7 @@ def select_user():
         if select_user:
 
          # If user exist in database then check password
-         if bcrypt.check_password_hash(select_user["password"].encode('utf-8'), request.form["user_password"]):
+         if bcrypt.check_password_hash(select_user["user_password"].encode('utf-8'), request.form["user_password"]):
             session["username"] = request.form["username"]
 
             # If login & password matches then redirect user to main page, otherwise pop out errors
