@@ -1,7 +1,6 @@
 import os
 from flask import Flask, render_template, redirect, session, flash, request, url_for
 from flask_pymongo import PyMongo
-from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
 
 
@@ -13,7 +12,6 @@ app.config["MONGO_URI"] = 'mongodb+srv://root:Ipod5009@myfirstcluster-2pohw.mong
 
 
 mongo = PyMongo(app)
-bcrypt = Bcrypt(app)
 
 
 
@@ -126,20 +124,6 @@ def select_user():
         users = mongo.db.users
         select_user = users.find_one({"username" : request.form["username"]})
         
-        if select_user:
-
-         # If user exist in database then check password
-         if bcrypt.check_password_hash(select_user["user_password"].encode('utf-8'), request.form["user_password"]):
-            session["username"] = request.form["username"]
-
-            # If login & password matches then redirect user to main page, otherwise pop out errors
-            if "username" in session:
-               return redirect(url_for("get_notes", username=session["username"]))
-        
-
-
-    flash("Invalid username/password combination") 
-   
     return render_template("login.html")
     
     

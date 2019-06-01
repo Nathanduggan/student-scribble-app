@@ -1,6 +1,6 @@
 # Student Scribble
 
-# Demo: 'Get Heroku Link'
+# Demo: 'https://student-scribble-app.herokuapp.com/'
 
 ## The User's
 
@@ -101,32 +101,20 @@ Here the student will be able to create an account. They will have to enter thei
    - I have tested all screens on multiple Browsers, including,
      Google Chrome, Safari, Firefox and Internet Explorer.
 ## Deployment: 
-    - I deployed my project on Heroku.
+    - I deployed my project on Heroku. Link: https://student-scribble-app.herokuapp.com/
     - I first ran a git init and started to track my files/images and committed them and then 
       pushed them up to Heroku, were they all open and load with no issues. 
 ## Contents:
-   - The first image on the Home page was taken by Natasha Thompson for the purposes of this project. The text below it was written by me.
-   - Half of the Logo was copied from the Habitat Website: https://www.habitatireland.ie/.
-   - The image below the text was obtained from Natasha Thompson (Volunteer from 2018)
-   - The text from the ‘read more’ section was copied from The Habitat Ireland Website: https://www.habitatireland.ie/.
-   - The content from the About HFH Page was also copied from the Habitat Ireland Website: https://www.habitatireland.ie/.
-   - The first Testimonial was obtained from Natasha Thompson and the second was obtained from Sinead Kelly. 
-   - Both Videos where copied from YouTube.
-## Images:
-   - All Images from the Gallery were obtained from Natasha Thompson: 
-     https://www.instagram.com/tasha_oobien/?hl=en.
-
+   - The Images on each paged are from Google Images.
+   - The Navigation bar is from Materialise, Along with the drop down menu for the Notes.
+   - The Side Bar is from Materialise, The icons from Google Icons.
+ 
 
 ## Acknowledgment: 
-     I received inspiration for this project from my partner Natasha Thompson (Tash). Tash volunteered 
-     with Habitat for Humanity last year and having seen her struggle with fundraising 
-     I thought it would be a good idea to create a site that 
-     would amalgamate information on Habitat’s work whilst promoting 
-     my fundraising journey. Prior to the commencement of this project I felt very nervous 
-     about the prospect of fundraising, but I genuinely believe that this site
-     will help me to reach out to more people and reach my target. 
-     I also wish to acknowledge the contribution of last year’s team leader, Sinead Kelly. 
-     Her insight and enthusiasm are very much appreciated. 
-     I would also like to thank my mentor Guido . His support throughout has been of great assistance. 
+     I received inspiration for this project from my partner Natasha Thompson (Tash). Tash is a  
+     Teacher in Bray and was always complaining that the children are never organised with 
+     Homework/Notes Etc
+     I would also like to thank my mentor Guido . His support throughout has been
+     of great assistance. 
      Lastly, I would like to acknowledge my dad who encouraged me to start this course in the 
      pursuit of bettering my career prospects. 
