@@ -51,6 +51,16 @@ strong {
   
 }
 
+.nav-wrapper {
+  padding-top: 20px;
+}
+
+.menu {
+  padding-right: 10;
+  font-size: 20px;
+  font-family: 'Modak', cursive;
+}
+
 .name {
   font-family: 'Indie Flower', cursive;
   color: #000;

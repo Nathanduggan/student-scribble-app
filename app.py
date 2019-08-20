@@ -35,7 +35,7 @@ def insert_note():
     return redirect(url_for('get_notes'))
      
      
-     
+    
 @app.route('/edit_task/<note_id>')
 def edit_task(note_id):
     the_note =  mongo.db.notes.find_one({"_id": ObjectId(note_id)})
