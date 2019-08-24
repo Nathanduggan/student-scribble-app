@@ -18,7 +18,7 @@ body  {
     <title>Student Scribble</title>
 </head>
 <body>
-  
+
   <nav>
      <ul id="slide-out" class="sidenav">
     <li><div class="user-view">
@@ -49,10 +49,10 @@ body  {
   <li class="divider"></li>
 </ul>
 
-  <div class="container nav-wrapper">
+  <div class="container navbar">
     
     
-    <a href="{{url_for('get_notes')}}" class="brand-logo"><i class="material-icons right"></i>Student Scribble</a>
+    <a href="{{url_for('get_notes')}}" class="brand-logo"><i class="material-icons right">create</i>Student Scribble</a>
     <ul class="right hide-on-med-and-down">
       <li><a href="{{url_for('get_notes')}}">Home</a></li>
       <li><a href="{{url_for('add_note')}}">Add Note</a></li>
@@ -63,26 +63,12 @@ body  {
     </ul>
   </div>
 </nav>
+  <div class="fb-like" data-href="https://github.com/Nathanduggan/myhabitatjourney" data-width="" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
 
-     <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="{{url_for('static', filename='img/noteback.png')}}">
-      </div>
-      <a href="#user"><img class="circle" src="{{url_for('static', filename='img/profile2.png')}}"></a>
-      <a href="#name"><span class="black-text name">Full Name</span></a>
-      <a href="#email"><span class="black-text email">Example@email.com</span></a>
-    </div></li>
-    <li><a href="{{url_for('get_notes')}}"><i class="material-icons">home</i>Home</a></li>
-    <li><a href="{{url_for('add_note')}}"><i class="material-icons">note_add</i>Add Note</a></li>
-    <li><a href="{{url_for('get_subjects')}}"><i class="material-icons">subject</i>Manage Subjects</a></li>
-    <li><div class="divider"></div></li>
-    <li><a href="{{url_for('about')}}"><i class="material-icons">info</i>About</a></li>
-    <li><a href="{{url_for('support')}}"><i class="material-icons">local_library</i>Support</a></li>
-    <li><a href="{{url_for('get_login')}}"><i class="material-icons">assignment_ind</i>Login</a></li>
+
     
   </ul>
-    <div class="container nav-wrapper">
+    <div class="container nav">
  <p class="menu">Menu<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">control_point</i></a></p>
 
  </div>
@@ -118,6 +104,7 @@ body  {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">
+    
        $(document).ready(function(){
     $('.parallax').parallax();
   });
@@ -162,4 +149,6 @@ for (i = 0; i < coll.length; i++) {
 }
        
     </script>
+    
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
 
