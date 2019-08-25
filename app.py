@@ -124,7 +124,7 @@ def select_user():
         users = mongo.db.users
         select_user = users.find_one({"username" : request.form["username"]})
         
-    return render_template("login.html")
+    return render_template("notes.html")
     
     
    
