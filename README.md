@@ -5,11 +5,11 @@
 ## The User's
 
 When deciding upon the purpose of my App, I considered creating something that will make it easier for students to keep track of
-homework, assignemnts and projects. I idea is that Students will be able to create accounts and log in each time. They will be able
-to create a list of subjects and then seelct a subject to write a note on. For example, they could create a note that will remond them of what homework
-they have to do for a particular subject, they will be able to select a date and weather or not the note is compete.
-The student will be able to edit notes as they go and delete them once complete. 
-/*------------------------------*/
+homework, assignments and projects. The idea is that Students will be able to create accounts and log in each time. They will be able
+to create a list of subjects and then select a subject to write a note on. For example, they could create a note that will remind them of what homework
+they have to do for a particular subject, they will be able to select a date and whether or not the note is compete.
+The student will be able to edit notes as they go and delete them once complete.
+They will be able to add Subjects and also remove Subjects they no longer need. 
 
 ### Features
 #### The Home Page:
@@ -37,7 +37,7 @@ the original details of the note, such as the subject, the topic, the descriptio
 Once the student changes the details and clicks edit note then the changes will be saved.
 
 #### The Login Page:
-This is where the student will have to enter their username and passowrd to access their account.
+This is where the student will have to enter their username and password to access their account.
 If they do not have an account, they can register by click the link. 
 
 #### The Register Page:
@@ -48,7 +48,7 @@ Here the student will be able to create an account. They will have to enter thei
 ##### Navigation Bar:
    - Go to the Home page.
    - Across the navigation bar the user can click the add note and create a new note.
-   - Back to the home page again and click the subjects which is also a drop dopwn list, Which contains 'add subjects' And 'Manage subjects.'
+   - Back to the home page again and click the subjects which is also a drop down list, Which contains 'add subjects' And 'Manage subjects.'
      Both links will bring you to their own page. 
   -  The Logo and the Home button if clicked will both bring the user back to the home page.
   -  On the top left of the screen there is a menu option and if selected will display a side-navigation bar.
@@ -63,7 +63,7 @@ Here the student will be able to create an account. They will have to enter thei
     
 
 ##### My Notes:
-    - From the home screen the user will see the my Notes in the center of the screen after they have 
+    - From the home screen the user will see the my Notes in the centre of the screen after they have 
       created at 
       If the user selects the note a drop down will display what message they made, if any of course. 
       Above will display, the subject,
@@ -73,8 +73,8 @@ Here the student will be able to create an account. They will have to enter thei
     - Type in your name. If nothing is entered an error will come after you click the sign-up Button.
     - Type your email. Again an error will pop up if nothing is entered or if the '@' Symbol isn't
        included.
-    - When the user clciks in the email, name or questions box, the background 
-      will turn grey in color and once the
+    - When the user clicks in the email, name or questions box, the background 
+      will turn grey in colour and once the
       user starts to type the text will be in white.
     - I have tested the Emailjs with multiple email address on all screen sizes
       and received every email to my email address: Nathan.duggan0@gmail.com
@@ -117,4 +117,4 @@ Here the student will be able to create an account. They will have to enter thei
      I would also like to thank my mentor Guido . His support throughout has been
      of great assistance. 
      Lastly, I would like to acknowledge my dad who encouraged me to start this course in the 
-     pursuit of bettering my career prospects. 
+     pursuit of bettering my career prospects.
