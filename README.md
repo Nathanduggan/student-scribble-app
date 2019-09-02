@@ -41,7 +41,25 @@ This is where the student will have to enter their username and password to acce
 If they do not have an account, they can register by click the link. 
 
 #### The Register Page:
-Here the student will be able to create an account. They will have to enter their name, username and create a password. 
+Here the student will be able to create an account. They will have to enter their name, username and create a password.
+
+## Technologies Used:
+ - <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a> for modern styling with responsive navigation, tables and cards 
+ - Javascript for implementation of JSON files, pagination, button and search functionality.
+ - <a href="https://jquery.com" rel="nofollow">Jquery</a> and Popper Js for Bootstrap functionality.
+ - <a href="https://fonts.google.com" rel="nofollow">Google Fonts</a> for fast loading on Exo 2 font.
+ - <a href="https://json.org/" rel="nofollow">JSON</a> for building a quasi database of records in JSON that can be loaded to individual pages.
+ - Python(https://www.python.org) 
+ - Python is a powerful programming language that is used to build websites in a relatively short amount of time.
+ - Flask(http://flask.pocoo.org) 
+ - Flask is a Python microframework that was used to construct the functionalities of the website.
+ - PyMongo 3.7.2(https://api.mongodb.com/python/current/) 
+ - PyMongo 3.7.2 is a Python library that made the connection between Flask and the mLab MongoDB database. Note: The command that was run for finding the version of pymongo was pip freeze | grep pymongo
+ 
+## Resources:
+ - <a href="https://stackoverflow.com" rel="nofollow">Stackoverflow</a>
+ - <a href="https://www.w3schools.com" rel="nofollow">W3 Schools</a>
+ - Google
 
 ## Testing.
 
@@ -55,42 +73,46 @@ Here the student will be able to create an account. They will have to enter thei
      In here the user will be able to navigate to all pages including, adding a note/ subject, about page, support page and also this is
      where the user most go in order to sign in. 
    
-##### Social Links: /*-----------------*/
-    - Go to the top of the Home page. Click on each of the Social media Links and see that they 
-       go to the correct sites. 
-    Next hover over them and they should increase in size.
-    - Repeat these steps on each Page and on the Footer of each Page.
+##### Social Links:
+    - From the top of the page a user can like the Facebook page and they can also Share the page. 
     
 
 ##### My Notes:
-    - From the home screen the user will see the my Notes in the centre of the screen after they have 
+    - From the home screen the user will see the my Notes in the 
+    centre of the screen after they have 
       created at 
-      If the user selects the note a drop down will display what message they made, if any of course. 
+      If the user selects the note a drop down will display what message 
+      they made, 
+      if any of course. 
       Above will display, the subject,
-      the topic and the Date. They will also be able to delete a edit the note by click on the buttons 
+      the topic and the Date. 
+      They will also be able to delete a edit the note by click on the buttons 
 ##### Support email form:
     - Go to Support page and will out the form.
-    - Type in your name. If nothing is entered an error will come after you click the sign-up Button.
-    - Type your email. Again an error will pop up if nothing is entered or if the '@' Symbol isn't
-       included.
+    - Type in your name. If nothing is entered an error will come after you 
+    click the sign-up Button.
+    - Type your email. Again an error will pop up if nothing is entered
+      or if the '@' Symbol isn't included.
     - When the user clicks in the email, name or questions box, the background 
       will turn grey in colour and once the
       user starts to type the text will be in white.
     - I have tested the Emailjs with multiple email address on all screen sizes
       and received every email to my email address: Nathan.duggan0@gmail.com
 ##### The Login Page:
-    - Here the user will have to enter their username and password that they would have already 
-      created.
-    - If the user enters wrong information then an error will appear telling the user that their 
-      credentials are incorrect. 
-    - If they have not yet registered, they can do so by clicking on the link below the password box. 
+    - Here the user will have to enter their username and password that they 
+      would have already created.
+    - If the user enters wrong information then an error will appear telling
+      the user that their credentials are incorrect. 
+    - If they have not yet registered, they can do so by clicking on the link 
+      below the password box. 
 ##### Register Page:
-    - Here the user will have to enter their name, create a username and create a password.
-    - They will have to create a username that doesn't already exist or less they will get an error. 
-    - Once they have successfully created an account, they will be redirected to the Login screen page 
-      so that they can Login. 
+    - Here the user will have to enter their name, create a username and create 
+      a password.
+    - They will have to create a username that doesn't already exist or less 
+      they will get an error. 
+    - Once they have successfully created an account, they will be redirected 
+      to the Login screen page so that they can Login. 
 
-       /*------------------------------*/
 ## How it looks on different screen sizes and browsers:
    - Mobile: The pages fit in nicely, '375 X 667'. The Navigation bar is changed to a Hamburger drop down.
    - Everything else fits in a 'Col-xs-12' Grid including the Footer 
@@ -104,6 +126,9 @@ Here the student will be able to create an account. They will have to enter thei
     - I deployed my project on Heroku. Link: https://student-scribble-app.herokuapp.com/
     - I first ran a git init and started to track my files/images and committed them and then 
       pushed them up to Heroku, were they all open and load with no issues. 
+    - Set up the App in Heroku and set up the IP And the PORT Config in settings.
+    - I Then connected it with Github.
+    - I Then deployed Branch. 
 ## Contents:
    - The Images on each paged are from Google Images.
    - The Navigation bar is from Materialise, Along with the drop down menu for the Notes.
