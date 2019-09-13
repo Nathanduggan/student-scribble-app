@@ -1,6 +1,6 @@
 # Student Scribble
 
-# Demo Link: <a href="https://student-scribble-app.herokuapp.com/"></a>
+# Demo Link: <a href="https://student-scribble-app.herokuapp.com/">https://student-scribble-app.herokuapp.com/</a>
 
 ## The User's
 
