@@ -1,6 +1,6 @@
 # Student Scribble
 
-# Demo: 'https://student-scribble-app.herokuapp.com/'
+# Demo: https://student-scribble-app.herokuapp.com/
 
 ## The User's
 
@@ -127,7 +127,7 @@ Here the student will be able to create an account. They will have to enter thei
     - I then logged into my github profile page and clicked on my project's name.
     - Clicked on settings, scrolled down to Github Pages,
     - Under source, Selected master branch. 
-    - Deployment Github Link:https://student-scribble-app.herokuapp.com/
+    - Deployment Github Link: https://nathanduggan.github.io/student-scribble-app/
     - Heroku Deployment: Python package runs the http server for the app, the
       Procfile gives Heroku the information to run the app and requirements.txt is a file that
       contains all the Python packages required to run the app.
