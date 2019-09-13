@@ -136,7 +136,6 @@ Here the student will be able to create an account. They will have to enter thei
     - After setting up the Heroku account I simple connect Heroku with Github
       and pushed the code to deployed the Branch.
 
-## Installation:
 
 
 ## Contents:
