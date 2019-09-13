@@ -118,8 +118,6 @@ Here the student will be able to create an account. They will have to enter thei
    - Everything else fits in a 'Col-xs-12' Grid including the Footer 
    - Tested ‘Sign up form’, Links in footer and ‘Read more’ button and all Works.
    - Tablet: Again, fits nicely '768 X 1024'. The Navigation stays the same as Desktop screen.
-   - The Footer Links are indented inwards, and I have hidden some text on Mobile and Tablet Screens for display purposes.
-   - All videos, photos and text fit in. Text is centred. 
    - I have tested all screens on multiple Browsers, including,
      Google Chrome, Safari, Firefox and Internet Explorer.
 ## Deployment: 
