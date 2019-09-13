@@ -8,8 +8,12 @@ When deciding upon the purpose of my App, I considered creating something that w
 homework, assignments and projects. The idea is that Students will be able to create accounts and log in each time. They will be able
 to create a list of subjects and then select a subject to write a note on. For example, they could create a note that will remind them of what homework
 they have to do for a particular subject, they will be able to select a date and whether or not the note is compete.
-The student will be able to edit notes as they go and delete them once complete.
-They will be able to add Subjects and also remove Subjects they no longer need. 
+The student can edit notes as they go and delete them once complete.
+They will be able to add Subjects and also remove Subjects they no longer need.
+If the student/user runs into any trouble they can contact support and fill out a form detailing their issues or it can also be used as an
+opportunity for them to ask questions.
+
+The web application should fulfil the CRUD operations.
 
 ### Features
 #### The Home Page:
@@ -27,7 +31,7 @@ This page will offer support for the students. The student will have to fill out
 they are having. 
 
 #### The Manage Subjects Page:
-This page will list the subjects that the students have added. They will be able to edit subject and also delete the student.
+This page will list the subjects that the students have added. They will be able to edit subjects and also delete the subject.
 At the bottom of the page will be an add subject button where the student will be able to add a new subject to the list. 
 
 
@@ -38,7 +42,7 @@ Once the student changes the details and clicks edit note then the changes will 
 
 #### The Login Page:
 This is where the student will have to enter their username and password to access their account.
-If they do not have an account, they can register by click the link. 
+If they do not have an account, they can register by clicking the link. 
 
 #### The Register Page:
 Here the student will be able to create an account. They will have to enter their name, username and create a password.
@@ -50,12 +54,9 @@ Here the student will be able to create an account. They will have to enter thei
  - <a href="https://fonts.google.com" rel="nofollow">Google Fonts</a> for fast loading on Exo 2 font.
  - <a href="https://json.org/" rel="nofollow">JSON</a> for building a quasi database of records in JSON that can be loaded to individual pages.
  - Python(https://www.python.org) 
- - Python is a powerful programming language that is used to build websites in a relatively short amount of time.
  - Flask(http://flask.pocoo.org) 
- - Flask is a Python microframework that was used to construct the functionalities of the website.
  - PyMongo 3.7.2(https://api.mongodb.com/python/current/) 
- - PyMongo 3.7.2 is a Python library that made the connection between Flask and the mLab MongoDB database. Note: The command that was run for finding the version of pymongo was pip freeze | grep pymongo
- 
+
 ## Resources:
  - <a href="https://stackoverflow.com" rel="nofollow">Stackoverflow</a>
  - <a href="https://www.w3schools.com" rel="nofollow">W3 Schools</a>
@@ -79,19 +80,17 @@ Here the student will be able to create an account. They will have to enter thei
 
 ##### My Notes:
     - From the home screen the user will see the my Notes in the 
-    centre of the screen after they have 
-      created at 
+      centre of the screen after they have created  it 
       If the user selects the note a drop down will display what message 
-      they made, 
-      if any of course. 
+      they made, if any of course. 
       Above will display, the subject,
       the topic and the Date. 
-      They will also be able to delete a edit the note by click on the buttons 
+      They will also be able to delete and edit the note by clicking on the respective buttons.
 ##### Support email form:
-    - Go to Support page and will out the form.
+    - Go to Support page and fill out the form.
     - Type in your name. If nothing is entered an error will come after you 
-    click the sign-up Button.
-    - Type your email. Again an error will pop up if nothing is entered
+      click the sign-up Button.
+    - Type your email, again an error will pop up if nothing is entered
       or if the '@' Symbol isn't included.
     - When the user clicks in the email, name or questions box, the background 
       will turn grey in colour and once the
@@ -99,6 +98,7 @@ Here the student will be able to create an account. They will have to enter thei
     - I have tested the Emailjs with multiple email address on all screen sizes
       and received every email to my email address: Nathan.duggan0@gmail.com
 ##### The Login Page:
+    - For testing purposes username: Admin Password: Admin5
     - Here the user will have to enter their username and password that they 
       would have already created.
     - If the user enters wrong information then an error will appear telling
@@ -123,12 +123,24 @@ Here the student will be able to create an account. They will have to enter thei
    - I have tested all screens on multiple Browsers, including,
      Google Chrome, Safari, Firefox and Internet Explorer.
 ## Deployment: 
-    - I deployed my project on Heroku. Link: https://student-scribble-app.herokuapp.com/
+    - I have deployed this project on both Github and Heroku
     - I first ran a git init and started to track my files/images and committed them and then 
-      pushed them up to Heroku, were they all open and load with no issues. 
-    - Set up the App in Heroku and set up the IP And the PORT Config in settings.
-    - I Then connected it with Github.
-    - I Then deployed Branch. 
+      pushed them up to Github, were they all open and load with no issues. 
+    - I then logged into my github profile page and clicked on my project's name.
+    - Clicked on settings, scrolled down to Github Pages,
+    - Under source, Selected master branch. 
+    - Deployment Github Link:https://student-scribble-app.herokuapp.com/
+    - Heroku Deployment: Python package runs the http server for the app, the
+      Procfile gives Heroku the information to run the app and requirements.txt is a file that
+      contains all the Python packages required to run the app.
+    - MongoDB was chosen to host the dataset on the server.
+    - Heroku Link: https://student-scribble-app.herokuapp.com/
+    - After setting up the Heroku account I simple connect Heroku with Github
+      and pushed the code to deployed the Branch.
+
+## Installation:
+
+
 ## Contents:
    - The Images on each paged are from Google Images.
    - The Navigation bar is from Materialise, Along with the drop down menu for the Notes.
@@ -141,5 +153,5 @@ Here the student will be able to create an account. They will have to enter thei
      Homework/Notes Etc
      I would also like to thank my mentor Guido . His support throughout has been
      of great assistance. 
-     Lastly, I would like to acknowledge my dad who encouraged me to start this course in the 
+     Lastly, I would like to acknowledge my Dad who encouraged me to start this course in the 
      pursuit of bettering my career prospects.

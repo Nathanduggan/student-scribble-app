@@ -127,14 +127,11 @@ def select_user():
     return render_template("notes.html")
     
     
-   
-    
-    
 @app.route('/insert_user', methods=['POST'])
 def insert_user():
     users =  mongo.db.users
     users.insert_one(request.form.to_dict())
-    return redirect(url_for('login'))
+    return redirect(url_for('get_login'))
     
     
     
@@ -149,8 +146,6 @@ def get_login():
     users=mongo.db.users.find())
 
 
-
-    
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
